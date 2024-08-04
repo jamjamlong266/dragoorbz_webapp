@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "files.associations": {
+    "*.mdoc": "markdown"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

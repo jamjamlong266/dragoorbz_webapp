@@ -1,0 +1,44 @@
+{
+  "name": "lotto-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint",
+    "pm2": "next build && pm2 start npm --name btclotto_webapp -- start",
+    "pm2:restart": "next build && pm2 restart btclotto_webapp"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.2.10",
+    "@react-stately/data": "^3.11.2",
+    "@tanstack/react-query": "^5.32.0",
+    "@tanstack/react-query-devtools": "^5.32.0",
+    "@thirdweb-dev/react": "^4.4.32",
+    "@thirdweb-dev/sdk": "^4.0.58",
+    "axios": "^1.6.8",
+    "framer-motion": "^11.1.9",
+    "next": "14.1.4",
+    "next-qrcode": "^2.5.1",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router-dom": "^6.23.0",
+    "swiper": "^11.1.0",
+    "thirdweb": "^5.3.0",
+    "viem": "2.x",
+    "wagmi": "^2.5.19"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.28.11",
+    "@types/react": "18.2.75",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.4.4"
+  },
+  "packageManager": "yarn@4.1.1"
+}
