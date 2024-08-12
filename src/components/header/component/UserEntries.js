@@ -67,9 +67,10 @@ export default function UserEntries() {
   });
 
   useEffect(() => {
-    const total =
-      getUserBetAmount &&
-      getUserBetAmount.reduce((a, b) => Number(a) + Number(b), 0);
+    const total = (getUserBetAmount ?? []).reduce(
+      (a, b) => Number(a) + Number(b),
+      0
+    );
 
     setTotalEntries(total);
   }, [getUserBetAmount]);
